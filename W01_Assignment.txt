@@ -1,0 +1,35 @@
+W01 Assignment: Explain Version Control
+Student: Jusn Jose AGuirre Marin
+
+Instructions
+Now that you have learned about the principle of version control and practiced using Git and GitHub, answer the following question (the way you would in a job interview):
+
+What is version control and why is it important?
+Your response must:
+
+1-Explain the meaning of Version Control
+2-Highlight a benefit of Version Control
+3-Example of version control: Describe the way version control might be used on a software development team.
+4-Show a command used in Version Control (for example a Git command)
+5-Thoroughly explain these concepts (this likely cannot be done in less than 100 words)
+
+For me the meaning of Version Control is the best way to organize your work, not only help you to
+track, manage and change the code, but help you to see what we need to change, who changed it and also
+when it was changed. I never have work like a programmer yet, but I know that the best way to finish a
+programm is with a plan, a plan needs to be physic and the version control for me is the way to create a
+physic plan, example use the "git status" command, to see what we need to do in the code, with that command
+we create the not physic "what we need to do" to a physic message like "On branch main - Changes not staged for commit:"
+Another think about the meaning of Version Control for me is the TEAM WORK, if create a coude by myself is challenger
+and sometimes frustrating I don't want to imagine how difficult is to do it with a team without communication, for that reason
+has this version controler to see what is happening with the code is essential in the communication of the team.
+
+2- The highligth for me is the TEAM WORK, the communication is essential, in this case use the version control to check
+what my companions are doing is a good way of communication and also allowed me to udnerstand how I can help in the specific part 
+of the project that we are doing.
+
+3- Example is the when a companion created a new repo and then we need to copy that to use it in our owns computers,
+usign the  "git clone" command is possible, also with the visual code welcome page.
+
+4- I showed two commands (status and clone)
+
+5- Words: Sice line 16 until 33 are 264 words
