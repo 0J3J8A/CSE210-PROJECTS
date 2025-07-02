@@ -28,4 +28,5 @@ class Program
         }
         Console.WriteLine($"You guessed it. The magic number is: {MAGICNUMBER}.");
     }
+    //Wrote and tested a number guessing game with lower and higher messages. Learning about loops, specially while loops.
 }

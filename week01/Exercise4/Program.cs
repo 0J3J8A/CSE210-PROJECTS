@@ -72,4 +72,5 @@ class Program
         }
         Console.WriteLine($"The maxium number is: {MAXNUMBER}");
     }
+    // Wrote and tested a program that sums, averages, and finds the max number from a user-input list of integers.Learning about lists and adding items to the list.
 }

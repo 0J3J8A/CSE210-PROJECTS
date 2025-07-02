@@ -13,4 +13,5 @@ class Program
         string LASTNAME = Console.ReadLine();
         Console.WriteLine($"Your name is {LASTNAME}, {FIRSTNAME} {LASTNAME}.");
     }
+    // Wrote and tested a program that asks for the user's name and displays it. Learning about Input and Output
 }

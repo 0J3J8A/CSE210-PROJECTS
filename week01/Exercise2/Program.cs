@@ -34,7 +34,7 @@ class Program
         }
 
         Console.WriteLine($"Your grade is: {LETTER}");
-        
+
         if (NUMBERPERCENTAGE >= 70)
         {
             Console.WriteLine("Congratulations, you passed the course.");
@@ -42,6 +42,7 @@ class Program
         else
         {
             Console.WriteLine("I know that you can do it, the next time would be better.");
-        }     
+        }
     }
+    //Wrote and tested a program that converts a numeric grade to letter grade and shows pass/fail message. Learning about If statements.
 }
