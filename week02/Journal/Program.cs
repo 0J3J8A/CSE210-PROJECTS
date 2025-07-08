@@ -1,3 +1,4 @@
+using System.IO;
 using System;
 using System.Globalization;
 
@@ -7,9 +8,9 @@ class Program
     {
         Journal journal = new Journal();
         Console.WriteLine("Hello World! This is the Journal Project.");
-        while (true)
+        while (true) //Shows creativity and exceeds core requirements (I CREATE A LOOP TO USE THE MAIN MENU)
         {
-            int choice = DisplayMenu(); // Calling the MAIN MENU
+            int choice = DisplayMenu(); // CALLING THE MAIN MENU
 
             if (choice == 1)
             { WriteEntry(journal); }
@@ -17,11 +18,18 @@ class Program
             { DisplayThoughts(journal); }
             else if (choice == 3)
             {
+                Console.WriteLine("Enter the filename to load your journal:");
+                string filename = Console.ReadLine();
 
+                journal.LoadFromFile(filename);
+                DisplayThoughts(journal);      // SHOWS THE ENTRIES AFTER LOAD THE FILE GIVEN BY THE USER
             }
             else if (choice == 4)
             {
-
+                Console.WriteLine("Enter the filename to save your journal:");
+                string filename = Console.ReadLine();
+                journal.SaveToFile(filename);
+                //THE CLASS IS GOING TO CREATE A NEW FILE WITH THE NAME THAT WOULD BE GIVEN BY THE USER
             }
             else if (choice == 5)
             {
@@ -58,7 +66,7 @@ class Program
         Console.WriteLine($"Please type your response: ");
         string userInput = Console.ReadLine();
 
-        // Create a new Entry to save the prompt and response in the List
+        // CREATE A NEW ENTRY TO SAVE THE PROMPT ANS RESPONSE
         Entry newEntry = new Entry(randomPrompt, userInput);
         journal.AddEntry(newEntry);
     }
@@ -67,5 +75,10 @@ class Program
     {
         journal.DisplayEntries();
     }
-
 }
+
+//Shows creativity and exceeds core requirements 
+
+// (I CREATE A LOOP TO USE THE MAIN MENU) LINE 11
+
+// (I ADD A MESSAGE IN THE LINES 36 AND 52 OF Journal.cs / TO EXPLAIN THAT THE ACTION WAS COMPLETED SUCCESFULLY)
