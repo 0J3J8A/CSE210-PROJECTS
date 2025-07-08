@@ -65,19 +65,7 @@ class Program
 
     static void DisplayThoughts(Journal journal)
     {
-        if (journal.Entries.Count == 0)
-        {
-            Console.WriteLine("No entries found. Your journal is empty.\n");
-            return;
-        }
-
-        Console.WriteLine("YOUR JOURNAL ENTRIES");
-        foreach (Entry entry in journal.Entries)
-        {
-            Console.WriteLine($"Date: {entry.Date}. Prompt: {entry.Prompt}");
-            Console.WriteLine($"Response: {entry.Response}\n");
-            Console.WriteLine("----------------------------");
-        }
+        journal.DisplayEntries();
     }
 
 }
