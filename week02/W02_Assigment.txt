@@ -1,0 +1,59 @@
+W02 Assignment: Explain Abstraction
+Student: Juan Jose Aguirre Marin
+
+Instructions
+Now that you have learned about the principle of abstraction, and designed and developed a program using it, return to Canvas and answer the following question (the way you would in a job interview):
+
+What is abstraction and why is it important?
+Your response must:
+
+1.Explain the meaning of Abstraction.
+2. Highlight a benefit of Abstraction.
+3. Provide an application of Abstraction.
+4. Use a code example of Abstraction from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+5. Thoroughly explain these concepts. (This likely cannot be done in less than 100 words.)
+
+I wrote the note that Abstraction is a process, so for me is an action to change a big code or idea 
+in a simple one, I like to think about it like folders, each folder has a lot of information but if you
+use a title and put all in a folder with a specific title that can help us to understand that will in the
+organization and effectiveness of the proyect. The example is programming with classes, the classes for me
+are folders and sub-folders to create a final proyect, and my notes says "Programming with classes is another
+way of creating abstractions in software". Using abstracting away the complexity, we can focus on solving 
+problems at a higher level, making the code easier to understand and maintain.
+
+2. The benefict of Abstraction is the part that says "each folder has a lot of information but if you
+use a title and put all in a folder with a specific title that can help us to understand that will in the
+organization and effectiveness of the proyect" because copy and paste the same code take time, and also has
+all the code in the same file is difficult to read, for that reason I think that is a great way to organize
+the work.
+
+3. The example is programming with classes, the classes for me are folders and sub-folders to create a 
+final proyect, and my notes says "Programming with classes is another way of creating abstractions in 
+software". I know that this quote was from the Learning Activity information but is the best way to
+applicated the abastraction, using classes.
+
+4. I'm going to use part of the code for this activity.
+
+static void DisplayThoughts(Journal journal)
+    {
+        journal.DisplayEntries();
+    }
+
+public void DisplayEntries()
+    {
+        if (Entries.Count == 0)
+        {
+            Console.WriteLine("No entries found. Your journal is empty.\n");
+            return;
+        }
+
+        Console.WriteLine("YOUR JOURNAL ENTRIES");
+        foreach (Entry entry in Entries)
+        {
+            Console.WriteLine($"Date: {entry._Date}. Prompt: {entry._Prompt}");
+            Console.WriteLine($"Response: {entry._Response}\n");
+            Console.WriteLine("----------------------------");
+        }
+    }
+
+5. Words: Sice line 16 until 57 are 425 words

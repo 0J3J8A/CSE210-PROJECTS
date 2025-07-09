@@ -1,5 +1,5 @@
 W01 Assignment: Explain Version Control
-Student: Jusn Jose AGuirre Marin
+Student: Jusn Jose Aguirre Marin
 
 Instructions
 Now that you have learned about the principle of version control and practiced using Git and GitHub, answer the following question (the way you would in a job interview):
