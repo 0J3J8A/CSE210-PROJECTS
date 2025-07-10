@@ -20,7 +20,7 @@ public class Journal
         foreach (Entry entry in Entries)
         {
             Console.WriteLine($"Date: {entry._Date}. Prompt: {entry._Prompt}");
-            Console.WriteLine($"Response: {entry._Response}\n");
+            Console.WriteLine($"Response: {entry._Response}");
             Console.WriteLine("----------------------------");
         }
     }
