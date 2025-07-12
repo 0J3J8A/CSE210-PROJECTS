@@ -44,7 +44,7 @@ class Program
         }
     }
 
-    static int DisplayMenu()
+    static int DisplayMenu() // CREATING THE MAIN MENU  
     {
         Console.WriteLine("This is the Journal Main Menu, please select an option: ");
         Console.WriteLine("1.Write");
@@ -66,7 +66,7 @@ class Program
         Console.WriteLine($"Please type your response: ");
         string userInput = Console.ReadLine();
 
-        // CREATE A NEW ENTRY TO SAVE THE PROMPT ANS RESPONSE
+        // CREATE A NEW ENTRY TO SAVE THE PROMPT AND RESPONSE
         Entry newEntry = new Entry(randomPrompt, userInput);
         journal.AddEntry(newEntry);
     }

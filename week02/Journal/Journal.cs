@@ -44,7 +44,7 @@ public class Journal
         foreach (string line in lines)
         {
             string[] parts = line.Split('|'); //USING THE SEPARATOR SIGN OF LINE 33
-            if (parts.Length == 3)
+            if (parts.Length == 3) //Get the 3 parts (Date / Prompt / User Input)
             {
                 Entry newEntry = new Entry(parts[1], parts[2]) {_Date = parts[0] };
                 Entries.Add(newEntry);
