@@ -1,0 +1,76 @@
+W03 Assignment: Explain Encapsulation
+Student: Juan Jose Aguirre Marin
+
+Instructions
+Now that you have learned about the principle of encapsulation, and designed and developed a program using it, return to Canvas and answer the following question (the way you would in a job interview):
+
+What is encapsulation and why is it important?
+Your response must:
+
+1. Explain the meaning of Encapsulation.
+2. Highlight a benefit of Encapsulation.
+3. Provide an application of Encapsulation.
+4. Use a code example of Encapsulation from the program you wrote. (You should copy and paste 
+a few lines of code that demonstrate the use of the principle.)
+5. Thoroughly explain these concepts. (This likely cannot be done in less than 100 words.)
+
+For me encapsulation is a programming principle that hides the internal state of an 
+object and gives a controlled interface for interacting with it, that is in order to
+have more control in the progam, the encapsulation give us the option to change only
+one part of the code and no all the code, that is helpfully when we need to change the
+program a lot of times. Also that principle protects the data and ensures that it can 
+only be modified through well-defined methods. The purpose of encapsulation is to ensure
+that the internal details of an object are protected from outside interference. By doing 
+this, it allows you to change how a class works internally without affecting the code that
+interacts with it.
+
+2. I think that the primary benefit of encapsulation is data protection and flexibility. 
+Using variables and data private within a class, other parts of the program cannot modify them 
+directly, which helps to prevent errors and maintain consistency. Also, the external code can
+only interact with the data through well-defined public methods. This also makes the class 
+more adaptable to change in the future.
+
+3. A common application of encapsulation is the use of private and public methods. 
+For example, I can make a list or a dictionary private within a class and then expose 
+methods for adding or retrieving items. This give me the opction that I will be able to 
+maintain the control over how the data is modified.
+
+4. I'm going to use part of the code for this activity.
+
+IN THIS EXAMPLE I'M USING PRIVITE VARIABLES, for the important parts of the scriptures.
+
+class Reference
+{ //USING PRIVATE VARIABLES
+    private string _book; 
+    private int _chapter;
+    private int _verse;
+    private int _lastVerse;
+
+    public Reference(string book, int chapter, int verse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _lastVerse = verse;
+    }
+
+    public Reference(string book, int chapter, int verse, int endVerse)
+    {
+        _book = book;
+        _chapter = chapter;
+        _verse = verse;
+        _lastVerse = endVerse;
+    }
+
+    public string GetDisplayText() //GETTER
+    {
+        if (_verse == _lastVerse)
+        {
+            return $"{_book} {_chapter}:{_verse}";
+        }
+        return $"{_book} {_chapter}:{_verse}-{_lastVerse}";
+    }
+}
+
+
+5. Words: Sice line 17 until 73 are 294 words.
