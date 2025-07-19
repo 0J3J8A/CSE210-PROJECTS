@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.IO;
 
 class ScriptureLibrary
-{
+{//USING PRIVATE VARIABLES
     private List<Scripture> _scriptures = new List<Scripture>();
 
     public ScriptureLibrary(string filename)
@@ -59,4 +59,9 @@ class ScriptureLibrary
 }
 
 //THESE CLASS WAS CREATED TO USE A FILE THAT STORES THE SCRIPTURES
-//THE FILD WOULD NEED TO BE IN THE SAME FOLDER OF THE PROGRAM
+//THE FILE WOULD NEED TO BE IN THE SAME FOLDER OF THE PROGRAM
+//THE CONTENT OF THE FILE WOULBE THE FOLLOWING FORMAT:
+//BOOK CHAPTER:VERSE / CONTENT
+// OR
+//BOOK CHAPTER:VERSE_START - VERSE_END / CONTENT
+//THE SIGN  /  IS THE SEPARATOR SIGN USING IN LINE 20

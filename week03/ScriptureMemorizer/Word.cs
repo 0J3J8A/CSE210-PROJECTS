@@ -1,5 +1,5 @@
 class Word
-{
+{//USING PRIVATE VARIABLES
     private string _text;
     private bool _occult;
 

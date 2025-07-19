@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 
 class Scripture
-{
+{//USING PRIVATE VARIABLES
     private Reference _reference;
     private List<Word> _words = new List<Word>();
 
