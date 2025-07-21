@@ -47,11 +47,7 @@ class Program
             Console.WriteLine($"Author: {i.GetAuthor()}");
             Console.WriteLine($"Length: {i.GetLengthSeconds()} seconds");
             Console.WriteLine($"Number of comments: {i.GetNumberOfComments()}");
-
             Console.WriteLine("Comments:");
-
-            Console.WriteLine();
-
             foreach (Comment comment in i.GetComments())
             {
                 Console.WriteLine($"- {comment.GetCommentPerson()}: {comment.GetCommentText()}");
