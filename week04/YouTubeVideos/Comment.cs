@@ -1,7 +1,7 @@
 public class Comment
 {
-    private string _commentPerson;
-    private string _commentText;
+    private string _commentPerson; // tracking the person name who wrote the comment
+    private string _commentText; // tracking the comment itself
 
     public Comment(string Name, string Text)
     {

@@ -40,7 +40,7 @@ class Program
         v_4.AddComment(new Comment("Jennifer Park", "Perfect pacing for complete beginners."));
         videos.Add(v_4);
 
-        // Iterate through the video list and display information
+        // Display Information
         foreach (Video i in videos)
         {
             Console.WriteLine($"Title: {i.GetTitle()}");
@@ -48,7 +48,12 @@ class Program
             Console.WriteLine($"Length: {i.GetLengthSeconds()} seconds");
             Console.WriteLine($"Number of comments: {i.GetNumberOfComments()}");
 
+            Console.WriteLine();
+
             Console.WriteLine("Comments:");
+
+            Console.WriteLine();
+            
             foreach (Comment comment in i.GetComments())
             {
                 Console.WriteLine($"- {comment.GetCommentPerson()}: {comment.GetCommentText()}");

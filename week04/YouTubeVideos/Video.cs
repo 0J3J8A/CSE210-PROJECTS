@@ -1,9 +1,9 @@
 public class Video
 {
-    private string _videoTitle;
-    private string _videoAuthor;
-    private int _lengthSeconds;
-    private List<Comment> _allComments;
+    private string _videoTitle; // tracking title of the video
+    private string _videoAuthor; // tracking author of the video
+    private int _lengthSeconds; // traking length of the video in seconds
+    private List<Comment> _allComments; // creating a list
 
 
     public Video(string TITLE, string AUTHOR, int LENGTHSEC)
@@ -16,12 +16,12 @@ public class Video
 
     public void AddComment(Comment comment)
     {
-        _allComments.Add(comment);
+        _allComments.Add(comment); // store the coments
     }
 
     public int GetNumberOfComments()
     {
-        return _allComments.Count;
+        return _allComments.Count; // return number of comments
     }
 
     public string GetTitle()
