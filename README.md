@@ -1,7 +1,7 @@
 # cse210-ww-student-template
 This is the part two of the Assigment Intructions, type my name.
 
-Sstudent Name: Juan Jose Aguirre Marin
+Student Name: Juan Jose Aguirre Marin
 
 This is the starter code for students in the worldwide content version of CSE 210.
 
