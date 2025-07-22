@@ -2,8 +2,8 @@ using System.Collections.Generic;
 
 public class Order
 {
-    private List<Product> _products;
-    private Customer _customer;
+    private List<Product> _products; //List of products
+    private Customer _customer; 
 
     public Order(Customer customer)
     {
@@ -16,7 +16,7 @@ public class Order
         _products.Add(product);
     }
 
-    public double CalculateTotalCost()
+    public double CalculateTotalCost() //CALCULATE THE TOTAL COST
     {
         double total = 0;
         foreach (Product product in _products)
@@ -24,7 +24,7 @@ public class Order
             total += product.TotalCost();
         }
 
-        // Add shipping cost
+        // Add shipping cost USA or another country
         total += _customer.LivesUSA() ? 5 : 35;
         return total;
     }

@@ -1,6 +1,7 @@
 public class Product
 {
-    private string _productName;
+    // Contains the name, product id, price, and quantity of each product.
+    private string _productName; 
     private string _productId;
     private double _productPrice;
     private int _productQuantity;
@@ -23,8 +24,8 @@ public class Product
         return _productId;
     }
 
-    public double TotalCost()
+    public double TotalCost() //The total cost of this product is computed by multiplying the price per unit and the quantit
     {
-        return _productPrice * _productQuantity;
+        return _productPrice * _productQuantity; 
     }
 }

@@ -1,7 +1,8 @@
 public class Customer
 {
-    private string _customerName;
-    private Address _fullAddress;
+    // The customer contains a name and an address.
+    private string _customerName; // string
+    private Address _fullAddress; // linked to Address class
     public Customer(string name, Address address)
     {
         _customerName = name;
@@ -18,7 +19,7 @@ public class Customer
         return _fullAddress;
     }
 
-    public bool LivesUSA()
+    public bool LivesUSA() //The customer should have a method that can return whether they live in the USA or not. 
     {
         return _fullAddress.USA();
     }
