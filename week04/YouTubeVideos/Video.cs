@@ -3,7 +3,7 @@ public class Video
     private string _videoTitle; // tracking title of the video
     private string _videoAuthor; // tracking author of the video
     private int _lengthSeconds; // traking length of the video in seconds
-    private List<Comment> _allComments; // creating a list
+    private List<Comment> _allComments; // creating a list / store the list
 
 
     public Video(string TITLE, string AUTHOR, int LENGTHSEC)
