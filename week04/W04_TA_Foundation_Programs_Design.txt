@@ -1,0 +1,64 @@
+Student: Juan Jose Aguirre Marin
+1.
+
+Program Youtube Videos
+
+Program
+Create the list for each Video
+Display the information with a loop
+
+Video
+   Set variables private
+   AddComment
+   GetNumberOfComments
+   GetTitle
+   GetAuthor
+   GetLengthSeconds
+   GetComments (Use a list)
+
+Comment
+   Set variables private
+   Comment Function (atributtes of name of the commenter and text)
+   GetCommentPerson
+   GetCommentText
+
+
+2.
+
+Program Online Ordening
+
+Program
+Create the Address
+Create the Customer
+Create the Products
+Create the Orders
+Dispaly the Orders
+
+Products
+   Set variables private
+   Comment Function (atributtes of name of product / id / price / number)
+   GetProductName
+   GetProductId
+   TotalCost (The total cost of this product is computed by multiplying the price per unit and the quantit)
+
+Order
+   List private
+   Order Function
+   AddProduct
+   CalculateTotalCost (Add shipping cost USA or another country)
+   GetPackingLabel
+   GetShippingLabel
+
+Customer
+   Set variables private
+   Customer function (attributes name of the customer and address)
+   GetName
+   GetAddress
+   LivesUSA (defined if is living in USA or No)
+
+Address
+   Set variables private
+   Addres funtion (attributes of each part of the address)
+   USA (return a bool)
+   GetFullAddress (The address should have a method to return a string all of its fields together in one string)
+   
