@@ -1,0 +1,40 @@
+W05 Assignment: Explain Inheritance
+Student: Juan Jose Aguirre Marin
+
+Instructions
+Now that you have learned about the principle of inheritance, and designed and developed a program using it, return to Canvas and answer the following question (the way you would in a job interview):
+
+What is inheritance and why is it important?
+Your response must:
+
+1. Explain the meaning of Inheritance.
+2. Highlight a benefit of Inheritance.
+3. Provide an application of Inheritance.
+4. Use a code example of Inheritance from the program you wrote. (You should copy and paste a few lines of 
+code that demonstrate the use of the principle.)
+5. Thoroughly explain these concepts. (This likely cannot be done in less than 100 words.)
+
+I understand thet Inheritance is a programming principle that allows one class to obtain the 
+attributes and methods of another class without having to rewrite them, that means get the same
+code without coding more. I read that a example is children inherit certain characteristics from
+their parents. A class that inherits from another is called a subclass, and the class being 
+inherited from is called a superclass. This feature allows us to reuse code and maintain a cleaner, 
+more organized program structure.
+
+2. I think that the primary benefit of inheritance is the clean and organized of the program,
+for me is so important to made the things rigth to point, and use this principle is a good way
+to do that,also the part to thing in the Rule of thumb, is helpfully to know why is the program 
+in that way or why not, also what I need to do to create the superclass.
+
+3. A common application of inheritance is in scenarios where we have a general class that defines
+common behavior, and then specialized subclasses that add unique features. For example, the class 
+Assignment (as a superclass) and then MathAssignment and WritingAssignment (as a baseclasses) are 
+subclasses that inherit from Assignment but add specific features like math problems or writing titles.
+
+4. I'm going to use code of the assigment activity of this week.
+
+public MathAssignment(string studentName, string topic, string textbookSection, string problems): base(studentName, topic)
+public WritingAssignment(string studentName, string topic, string title): base(studentName, topic)
+public Assignment(string studentName, string topic)
+
+5. Words: Sice line 17 until 38 are 150 words.
