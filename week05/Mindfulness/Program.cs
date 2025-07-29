@@ -10,7 +10,7 @@ class Program
         int choice;
         do
         {
-            choice = DisplayMenu();
+            choice = DisplayMenu(); // menu system to allow the user to choose an activity.
 
             if (choice == 1)
             {
@@ -61,3 +61,6 @@ class Program
     }
 
 }
+
+//Adding another kind of activity. (Showing Creativity and Exceeding Requirements)
+// With the BodyScanActivity class

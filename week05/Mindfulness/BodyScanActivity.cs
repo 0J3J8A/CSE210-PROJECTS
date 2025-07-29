@@ -1,11 +1,12 @@
 using System;
 using System.Collections.Generic;
 
+//Adding another kind of activity. (Showing Creativity and Exceeding Requirements)
 public class BodyScanActivity : Activity
 {
     private List<string> _bodyParts = new List<string>
     {
-        "feet", "legs", "hips", "back", "shoulders", 
+        "feet", "legs", "hips", "back", "shoulders",
         "arms", "hands", "neck", "face", "head"
     };
 
@@ -18,7 +19,7 @@ public class BodyScanActivity : Activity
     public void Run()
     {
         DisplayStartingMessage();
-        
+
         Console.WriteLine("Lie down or sit comfortably. We'll scan each part of your body for tension.");
         Console.WriteLine("Focus on each area, then consciously relax it.");
         Console.WriteLine("Press enter when you're ready to begin...");
@@ -31,7 +32,7 @@ public class BodyScanActivity : Activity
         foreach (string part in _bodyParts)
         {
             if (DateTime.Now >= endTime) break;
-            
+
             Console.WriteLine($"Bring your attention to your {part}...");
             Console.Write($"Relax your {part}... ");
             ShowCountDown(secondsPerPart > 3 ? 3 : secondsPerPart);

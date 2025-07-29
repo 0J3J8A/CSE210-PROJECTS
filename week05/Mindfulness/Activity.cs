@@ -14,7 +14,7 @@ public class Activity
         _duration = 0;
     }
 
-    public void DisplayStartingMessage()
+    public void DisplayStartingMessage() //STARTING MESSAGE
     {
         Console.Clear();
         Console.WriteLine($"Welcome to the {_name} Activity.");
@@ -25,10 +25,10 @@ public class Activity
         _duration = int.Parse(Console.ReadLine());
         Console.WriteLine();
         Console.WriteLine("Get ready to begin...");
-        ShowSpinner(3);
+        ShowSpinner(3); //ANIMATION
     }
 
-    public void DisplayEndingMessage()
+    public void DisplayEndingMessage() // ENDING MESSAGE
     {
         Console.WriteLine();
         Console.WriteLine("Well done!!");

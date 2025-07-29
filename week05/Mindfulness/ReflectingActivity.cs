@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 public class ReflectingActivity : Activity
 {
-    private List<string> _prompts = new List<string>
+    private List<string> _prompts = new List<string> //promps of the activity instructions
     {
         "Think of a time when you stood up for someone else.",
         "Think of a time when you did something really difficult.",
@@ -11,7 +11,7 @@ public class ReflectingActivity : Activity
         "Think of a time when you did something truly selfless."
     };
 
-    private List<string> _questions = new List<string>
+    private List<string> _questions = new List<string> //questions of the activity instructions
     {
         "Why was this experience meaningful to you?",
         "Have you ever done anything like this before?",
@@ -27,7 +27,7 @@ public class ReflectingActivity : Activity
     public ReflectingActivity()
     {
         _name = "Reflecting";
-        _description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life.";
+        _description = "This activity will help you reflect on times in your life when you have shown strength and resilience. This will help you recognize the power you have and how you can use it in other aspects of your life."; // DESCRIPTION AS IN THE INSTRUCTIONS
     }
 
     public void Run()
@@ -43,7 +43,7 @@ public class ReflectingActivity : Activity
         
         Console.WriteLine("Now ponder on each of the following questions as they related to this experience.");
         Console.Write("You may begin in: ");
-        ShowCountDown(5);
+        ShowCountDown(5);//COUNTDOWN
         Console.Clear();
 
         DateTime startTime = DateTime.Now;
