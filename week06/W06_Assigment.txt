@@ -1,0 +1,38 @@
+W06 Assignment: Explain Polymorphism
+Student: Juan Jose Aguirre Marin
+
+Instructions
+Now that you have learned about the principle of polymorphism, and designed and developed a program using it, return to Canvas and answer the following question (the way you would in a job interview):
+
+What is polymorphism and why is it important?
+Your response must:
+
+1. Explain the meaning of Polymorphism.
+2. Highlight a benefit of Polymorphism.
+3. Provide an application of Polymorphism.
+4. Use a code example of Polymorphism from the program you wrote. (You should copy and paste a few lines of code that demonstrate the use of the principle.)
+5. Thoroughly explain these concepts. (This likely cannot be done in less than 100 words.)
+
+I understand the Polymorphism ("many forms") the way lets one line of code behave
+differently based on context, I like the part of the context because is depending
+of the class, thats better tha just call a function, is similar but is not the same.
+It builds on abstraction, encapsulation, and inheritance to make programs flexible.
+For example, the overrides method is helpully to change a lot of things withouth change
+all the code.
+
+2. The biggest advantage is context-aware behavior without code changes. The program
+automatically detects the right behavior, making it adaptable for future modifications
+(like adding new shapes).
+
+3. In a graphics program, a single Draw() method call could render circles, squares, 
+or triangles differently—each shape class provides its own Draw implementation.
+
+4. I'm going to use the learning activity code overrides example.
+public class Circle : Shape {
+    //MORE CODE
+    public override double GetArea() => Math.PI * _radius * _radius; }
+
+orignal code in Shape
+public double GetArea(){return 0;}
+
+5. Words: Sice line 16 until 36 are 150 words.
