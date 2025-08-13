@@ -1,0 +1,60 @@
+W07 Assignment: Explain Programming with Classes
+Student: Juan Jose Aguirre Marin
+
+Instructions
+You have now learned about each of four principles of Programming with Classes:
+
+Abstraction
+Encapsulation
+Inheritance
+Polymorphism
+
+You have also used these principles to design and develop projects throughout the course 
+(including the standard projects and the Foundation programs).
+
+As a final Articulate assignment, return to Canvas and answer the following questions 
+(the way you would in a job interview):
+
+For each of the 4 principles of Programming with Classes, answer the following:
+
+- Briefly define the principle.
+- How did you use that principle in one of your programs.
+- How did using that principle help that program become more flexible for future changes?
+
+
+1. Abstraction
+For me, abstraction is like organizing a lot of code into folders with titles. 
+Each class is like a folder that holds related code, and that makes the program 
+easier to understand and use. It hides complexity and helps focus on solving 
+problems at a higher level.
+In my Journal program, I used abstraction by calling DisplayThoughts(journal) 
+which internally calls the DisplayEntries() method from the class. That way, 
+the main program doesn’t need to know how the entries are shown—it just works.
+This makes the program easier to update later without changing everything.
+
+2.Encapsulation
+Encapsulation is about protecting the data and only allowing changes through 
+public methods. It’s like keeping something private inside a class and only 
+giving access through buttons.
+In my Scripture program, I made variables like _book, _chapter, and _verse 
+private, and used a method GetDisplayText() to show the reference. That way, 
+the data can’t be changed from outside, which keeps the program safe and clean.
+It also helps if I need to change the inside of the class later—it won’t affect
+the rest of the code.
+
+3.Inheritance
+Inheritance means that one class can use code from another without repeating 
+it. It’s like how children get traits from parents. This helps keep the code 
+organized.
+In one assignment, I had a base class Assignment, and two subclasses: MathAssignment
+and WritingAssignment. They both used the same base, but added their own features. 
+This saved me time and made the code easier to reuse and extend.
+
+4.Polymorphism
+Polymorphism lets the same method work in different ways depending on the class. 
+I like that it depends on the context, not just the function name.
+In my shape program, I used a base class Shape and each shape like Circle had its own 
+GetArea() method. When I called GetArea(), it automatically used the right version. 
+That helps if I want to add more shapes later without changing the main code.
+
+Words: Sice line 25 until 58 are 312 words.
